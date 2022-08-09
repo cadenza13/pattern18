@@ -1,0 +1,174 @@
+body{
+  background-color: blue;
+}
+
+.gameover{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.gameover.hidden{
+  display: none;
+}
+
+.gameover > h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(240, 20, 20);
+  text-shadow: 2px 4px 0 rgb(150, 10, 10);
+  margin: 100px auto 30px;
+}
+
+.gameover > a{
+  font-size: 18px;
+  padding: 4px 16px;
+  background-color: rgb(230, 20, 100);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 rgb(180, 10, 60);
+}
+
+.machine{
+  position: relative;
+  margin: 20px auto 0;
+  width: 320px;
+  border: 4px solid #fff;
+  background-color: #000;
+}
+
+.machine > img{
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.machine > .bet-lamp{
+  position: absolute;
+  top: 100px;
+  left: 15px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.machine > .bet-lamp > span{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #888;
+}
+
+.machine > .bet-lamp > span:nth-of-type(3){
+  margin: 15px 0;
+}
+
+.machine > .bet-lamp > span.flush{
+  background-color: #fff;
+}
+
+.machine > .display{
+  position: relative;
+  width: 260px;
+  height: 210px;
+  margin: 20px 10px 0 auto;
+  overflow: hidden;
+}
+
+.machine > .display > ul{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.machine > .display > .first{
+  right: auto;
+}
+
+.machine > .display > .third{
+  left: auto;
+}
+
+.machine > .display > ul > li{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+.machine > #spin-btn{
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  display: block;
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(240, 30, 30);
+  box-shadow: 0 4px 0 rgb(170, 10, 10);
+}
+
+.machine > .bet-btns{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+}
+
+.machine > .bet-btns > button{
+  margin-left: 10px;
+  padding: 4px 8px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: rgb(30, 200, 50);
+  box-shadow: 0 4px 0 rgb(10, 140, 30);
+}
+
+.machine > .stop-btns{
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin: 20px 30px 70px auto;
+}
+
+.machine > .stop-btns > button{
+  display: block;
+  width: 30px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(240, 240, 30);
+  box-shadow: 0 4px 0 rgb(170, 170, 10);
+}
+
+.player-info{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 30px auto;
+}
+
+.player-info > div{
+  font-family: monospace;
+  width: 100px;
+  line-height: 30px;
+  padding: 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #000;
+  border: 4px solid #fff;
+  text-align: right;
+  color: #fff;
+  letter-spacing: .1em;
+}

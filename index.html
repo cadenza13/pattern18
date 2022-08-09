@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="gameover hidden">
+    <h1>GAME OVER</h1>
+    <a href="index.html">ONE MORE</a>
+  </div>
+
+  <div class="machine">
+    <img src="img/LOGO.png" alt="">
+    
+    <div class="bet-lamp">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="display">
+      <ul class="first"></ul>
+      <ul class="second"></ul>
+      <ul class="third"></ul>
+    </div>
+  
+    <button id="spin-btn"></button>
+
+    <div class="bet-btns">
+      <button id="all-bet-btn">MAX BET</button>
+      <button id="single-bet-btn">1 BET</button>
+    </div>
+    
+    <div class="stop-btns">
+      <button id="stop-first"></button>
+      <button id="stop-second"></button>
+      <button id="stop-third"></button>
+    </div>
+  </div>
+
+  <div class="player-info">
+    <div id="bonus">0</div>
+    <div id="credit"></div>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
