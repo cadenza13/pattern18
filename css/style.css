@@ -1,6 +1,9 @@
+html{
+  touch-action: manipulation;
+}
+
 body{
   background-color: blue;
-  touch-action: manipulation;
 }
 
 .gameover{
