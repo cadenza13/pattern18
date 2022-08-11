@@ -305,6 +305,8 @@
   const allBtn = document.getElementById('all-bet-btn');
   const spinBtn = document.getElementById('spin-btn');
   const stopBtns = document.querySelectorAll('.stop-btns > button');
+  const payTable = document.querySelector('.pay-table');
+  const payBtn = document.getElementById('pay-btn');
 
   const reels = [
     new Reel(0),
@@ -346,5 +348,9 @@
         reels[index].stop();
       }
     });
+  });
+
+  payBtn.addEventListener('click', () =>{
+    payTable.classList.toggle('appear');
   });
 })();
